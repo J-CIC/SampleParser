@@ -34,10 +34,14 @@ void grammarParser::inputCode()
 	this->rawInput = "";
 	this->inputList.resize(0);
 	this->unitList.resize(0);
-	cout << "Input program name:\n";
+	cout << "Input file name:\n";
 	cin >> this->programName;
 	std::ifstream fin(this->programName, std::ios::in);
 	string temp;
+	if (!fin){
+		cout << "File not exists!" << endl;
+		exit(0);
+	}
 	while (getline(fin, temp))
 	{
 		vector<string> tempList = vector<string>();
