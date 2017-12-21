@@ -7,9 +7,6 @@
 int _tmain(int argc, _TCHAR* argv[])
 {
 	grammarParser parser = grammarParser();
-	cout << "Ò¦Ìî¼Ñ" << endl;
-	cout << "2015¼¶¼Æ¿Æ2°à" << endl;
-	cout << "201530542309" << endl;
 	parser.inputCode();
 	parser.checkWords();
 	parser.printListType();
