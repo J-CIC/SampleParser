@@ -40,6 +40,7 @@ void grammarParser::inputCode()
 	string temp;
 	if (!fin){
 		cout << "File not exists!" << endl;
+		system("pause");
 		exit(0);
 	}
 	while (getline(fin, temp))
